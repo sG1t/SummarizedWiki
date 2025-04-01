@@ -15,8 +15,8 @@ jobs:
 
     - name: Set up environment variables
       run: |
-        echo "MY_SECRET_API_KEY=${{ secrets.FIREBASE_API_KEY }}" >> $GITHUB_ENV
+        echo "FIREBASE_API_KEY=${{ secrets.FIREBASE_API_KEY }}" >> $GITHUB_ENV
 
     - name: Use the secret in a script
       run: |
-        echo "Using secret: $MY_SECRET_API_KEY"
+        echo "Using secret: $FIREBASE_API_KEY"
